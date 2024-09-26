@@ -101,8 +101,10 @@ def translator(input_str):
     elif identify_input_type(input_str) == 'English word':
         return translate_english_to_braille(input_str)
 def main():
-    print(translator("42"))
-    print(translator('.....OO.....O.O...OO...........O.OOOO.....O.O...OO....'))
+    i = input('input the sentence:')
+    #print(translator("42"))
+    #print(translator('.....OO.....O.O...OO...........O.OOOO.....O.O...OO....'))
+    print(translator(i))
 
 
 main()
